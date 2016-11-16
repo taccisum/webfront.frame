@@ -1,0 +1,52 @@
+/**
+    这个文件里主要写一些全局的标签的样式
+    */
+
+body, body * {
+    font-family: 微软雅黑;
+}
+
+body *::selection { background: dimgray; color: whitesmoke; }
+
+/* 禁止文本选择 */
+.navbar, .sidebar, select {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+.main-content {
+    font-size: 12px;
+}
+
+.main-container .page-content {
+    padding-top: 15px;
+}
+
+
+
+.input-group.input-group-merge > span.input-group-addon.left,
+.input-group.input-group-merge > input.left,
+.input-group.input-group-merge > span.input-group-btn.left > button
+ {
+    border-right: none;
+}
+.input-group.input-group-merge > span.input-group-addon.middle,
+.input-group.input-group-merge > input.middle,
+.input-group.input-group-merge > span.input-group-btn.middle > button  {
+    border-left: none;
+    border-right: none;
+}
+.input-group.input-group-merge > span.input-group-addon.right,
+.input-group.input-group-merge > input.right,
+.input-group.input-group-merge > span.input-group-btn.right > button   {
+    border-left: none;
+}
+
+.breadcrumb {
+    font-size: 12px;
+}

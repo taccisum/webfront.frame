@@ -1,0 +1,16 @@
+﻿/**
+    这个文件里主要写一些可供全局使用的css class
+    */
+
+.click {
+    cursor: pointer;
+}
+
+.emptyRow {
+    height: 8px;
+}
+
+.msgbox-text {
+    color: gray;
+    font-size: 13px;
+}
