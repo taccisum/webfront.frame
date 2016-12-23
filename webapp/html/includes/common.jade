@@ -1,0 +1,9 @@
+mixin btn(txt, type, size, cls)
+    if(!type)
+        type = "default"
+    if(!size)
+        size = "sm"
+    button(type="button" class="btn btn-" + type + " btn-" + size + " " + cls) #{txt}
+
+mixin icon(ico)
+    i(class="icon-" + ico)

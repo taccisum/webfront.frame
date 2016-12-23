@@ -1,0 +1,112 @@
+[
+  {
+    "ID": "33ce4530-ea30-4ce4-b3fd-ea61ba0d8c17",
+    "Name": "首页",
+    "ParentId": null,
+    "Url": "index.html",
+    "Icon": "icon-home",
+    "SortNo": 99,
+    "EnabledState": true,
+    "Description": "后台管理首页",
+    "CreatedOn": "/Date(1466750616540)/"
+  },
+  {
+    "ID": "33ce4530-ea30-4ce4-b3fd-ea61ba0d8c18",
+    "Name": "测试页面",
+    "ParentId": null,
+    "Url": "",
+    "Icon": "icon-pencil",
+    "SortNo": 97,
+    "EnabledState": true,
+    "Description": "测试页面",
+    "CreatedOn": "/Date(1466750616540)/"
+  },
+  {
+    "ID": "cd4d6736-cf02-46ae-a1c3-ff4e218536e7",
+    "Name": "command模式",
+    "ParentId": "33ce4530-ea30-4ce4-b3fd-ea61ba0d8c18",
+    "Url": "command_pattern.html",
+    "Icon": "icon-tasks",
+    "SortNo": 97,
+    "EnabledState": true,
+    "Description": "页面",
+    "CreatedOn": "/Date(1466750616540)/"
+  },
+  {
+    "ID": "fc193192-d947-49e7-849f-a58aaf4c58bb",
+    "Name": "社商云后台",
+    "ParentId": "ec1ffc6c-ed8d-4f26-9a17-a04bb506226b",
+    "Url": "http://mall.einwin.com",
+    "Icon": "icon-desktop",
+    "SortNo": 0,
+    "EnabledState": true,
+    "Description": "社商云后台",
+    "CreatedOn": "/Date(1471948728870)/"
+  },
+  {
+    "ID": "ec1ffc6c-ed8d-4f26-9a17-a04bb506226b",
+    "Name": "链接",
+    "ParentId": null,
+    "Url": "#",
+    "Icon": "icon-link",
+    "SortNo": 0,
+    "EnabledState": true,
+    "Description": "#",
+    "CreatedOn": "/Date(1471948689870)/"
+  },
+  {
+    "ID": "667ab03b-4271-427f-80bb-31707f85de2b",
+    "Name": "百度",
+    "ParentId": null,
+    "Url": "http://www.baidu.com",
+    "Icon": "icon-search",
+    "SortNo": 0,
+    "EnabledState": true,
+    "Description": "百度一下你就知道了",
+    "CreatedOn": "/Date(1471948178037)/"
+  },
+  {
+    "ID": "ffa9d3bf-20e8-4c44-b4fa-5142ad35eae7",
+    "Name": "Level2_1",
+    "ParentId": "c5eed7b6-afe5-4c86-b34c-4ecf23510701",
+    "Url": "javascript:void(0)",
+    "Icon": "icon-pencil",
+    "SortNo": 0,
+    "EnabledState": true,
+    "Description": "",
+    "CreatedOn": "/Date(1467023556950)/"
+  },
+  {
+    "ID": "6d0fecc6-18a5-4afc-ab7b-2cee31187fc0",
+    "Name": "Level3",
+    "ParentId": "b7e13c1c-bded-4bc5-b65f-fd4816052236",
+    "Url": "#",
+    "Icon": "icon-music",
+    "SortNo": 0,
+    "EnabledState": true,
+    "Description": "测试level3",
+    "CreatedOn": "/Date(1466750884763)/"
+  },
+  {
+    "ID": "b7e13c1c-bded-4bc5-b65f-fd4816052236",
+    "Name": "Level2",
+    "ParentId": "c5eed7b6-afe5-4c86-b34c-4ecf23510701",
+    "Url": "#",
+    "Icon": "icon-music",
+    "SortNo": 0,
+    "EnabledState": true,
+    "Description": "测试level2",
+    "CreatedOn": "/Date(1466750872380)/"
+  },
+  {
+    "ID": "c5eed7b6-afe5-4c86-b34c-4ecf23510701",
+    "Name": "Level1",
+    "ParentId": null,
+    "Url": "#",
+    "Icon": "icon-music",
+    "SortNo": 0,
+    "EnabledState": true,
+    "Description": "测试level1",
+    "CreatedOn": "/Date(1466750849437)/"
+  }
+]

@@ -61,10 +61,14 @@
 				})
 			}
 		
-			require(["systools"],function(tool){
+			require(["systools","sidebar"],function(tool, sbm){
 				window.tool = tool;
+				$.getJSON("content/js/modules/view.js/shared/menus.json", function (json) {
+					var sidebar = sbm.newInstance(json, "#nav-list");
+					sidebar.Load();
+					sidebar.Open(sidebar.CurrentMenuId(), true);
+				})
 			})
-
 		});
 
 	</script>
@@ -213,18 +217,34 @@
 	                
            		</div>
             	<div class="page-content">
-            		<ul class="user-menu">
-            			<li><span class="click">a</span></li>
-            			<li><span>b</span></li>
-            			<li><span>c</span></li>
-            			<li class="divider"></li>
-            			<li><span>d</span></li>
-            			<li><span>e</span></li>
-            		</ul>
-            		
-            		<p class="lighter">abcde</p>
-            	
-            	
+					<div class="btn-group">
+						<!-- .dropdown-toggle和data-toggle是必须的，否则无法触发点击事件 -->
+						<button data-toggle="dropdown" class="btn btn-sm">Action
+							<!-- 向下箭头 -->
+							<span class="icon-caret-down icon-on-right"></span>
+						</button>
+						<!-- .dropdown-menu表示这是点击时的下拉框内容 -->
+						<!-- .dropdown-default表示item阴影风格 -->
+						<ul class="dropdown-menu dropdown-default">
+							<li><a href="#">Action</a></li>
+							<li><a href="#">Another action</a></li>
+							<li class="dropdown-hover">
+								<a href="#">
+									Something else
+									<i class="icon-caret-right pull-right" style="line-height: 20px;"></i>
+								</a>
+								<ul class="dropdown-menu dropdown-success">
+									<li><a href="#">Action</a></li>
+									<li><a href="#">Another action</a></li>
+								</ul>
+							</li>
+							<!-- 分割线 -->
+							<li class="divider"></li>
+							<li><a href="#">Separated link</a></li>
+						</ul>
+					</div>
+
+
             	</div>
             </div>
 		</div>

@@ -48,6 +48,10 @@ define(["w_datatables", "w_jq_ac", "w_art_dialog", "w_tipsy", "w_shade"], functi
             conf.success = function (result, textStatus) {
                 locker.unlock();
                 if (result.Success) {
+                    if (result.message.trim().length > 0) {
+                        sys.msgbox(result.message, "y");
+                    }
+
                     if (typeof config.success == "function") {
                         config.success(result.Data, textStatus);
                     }

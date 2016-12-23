@@ -20,7 +20,7 @@
             ///public
             "base": base + "base",
             "mockdata": common + "mockdata",
-            "sidebar": "ViewJs/Shared/Sidebar",
+            "sidebar": "view.js/shared/sidebar",
             "systools": common + "systools",
             "systools-plus": common + "systools-plus",
             "auto_tips": common + "auto_tips",

@@ -1,0 +1,29 @@
+-
+    var jsBasePath = "content/js/";
+-
+    var scripts = [
+    "requirejs/require.js",
+    "modules/base/config.js"];
+-
+    var styles = [
+    "content/css/bootstrap/css/bootstrap.min.css",
+    "content/ace.admin/assets/css/ace.min.css",
+    "content/ace.admin/assets/css/ace-skins.min.css",
+    "content/ace.admin/assets/css/font-awesome.min.css",
+    "content/js/jquery/plugins/artDialog/css/ui-dialog.css",
+    "content/js/jquery/plugins/datatables/dataTables.css",
+    "content/js/jquery/plugins/tipsy/stylesheets/tipsy.css",
+    "content/css/mystyle.css",
+    "content/css/commonstyle.css"
+    ];
+
+meta(http-equiv="keywords" content="tac,cisum,taccisum")
+meta(http-equiv="description" content="my works")
+link(rel="shortcut icon" href="favicon.ico" type="image/x-icon")
+style
+    include ../css/_shared.css
+
+each path in scripts
+    script(src= jsBasePath + path)
+each path in styles
+    link(href=path rel="stylesheet" type="text/css")

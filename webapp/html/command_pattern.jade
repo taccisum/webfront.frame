@@ -1,0 +1,32 @@
+extends extends/_shared
+block content
+    button(class="btn btn-primary btn-sm btn-color" data-color="blue") blue
+    button(class="btn btn-danger btn-sm btn-color" data-color="red") red
+    button(class="btn btn-warning btn-sm btn-color" data-color="yellow") yellow
+    button(class="btn btn-default btn-sm btn-color" data-color="gray") gray
+    br
+    br
+    button(class="btn btn-success btn-sm btn-size" data-size="100x100") 100x100
+    button(class="btn btn-success btn-sm btn-size" data-size="200x200") 200x200
+    button(class="btn btn-success btn-sm btn-size" data-size="300x300") 300x300
+    button(class="btn btn-success btn-sm btn-size" data-size="400x400") 400x400
+    br
+    br
+    button(class="btn btn-pink btn-sm btn-font-size" data-font-size="15") 15px
+    button(class="btn btn-pink btn-sm btn-font-size" data-font-size="18") 18px
+    button(class="btn btn-pink btn-sm btn-font-size" data-font-size="21") 21px
+    button(class="btn btn-pink btn-sm btn-font-size" data-font-size="24") 24px
+    br
+    br
+    button#btn_do(class="btn btn-primary btn-sm" disabled="disabled") do
+    button#btn_undo(class="btn btn-primary btn-sm" disabled="disabled") undo
+    br
+    br
+    br
+    div#mydiv(style="width: 200px; height: 200px; background-color: red;" class="receiver click" data-command="color size")
+    br
+    br
+    span#myspan(style="color:purple; font-size:13px;" class="receiver click" data-command="color font-size") hello world
+
+block onload
+    include js/command_pattern1.js

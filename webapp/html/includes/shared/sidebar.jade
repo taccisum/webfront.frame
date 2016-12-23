@@ -1,0 +1,32 @@
+//shortcut button
+div#sidebar-shortcuts(class="sidebar-shortcuts")
+    div(class="sidebar-shortcuts-large")
+        button(class="btn btn-success h32")
+            +icon("lemon")
+        button(class="btn btn-info h32")
+            +icon("comments")
+        button(class="btn btn-warning h32")
+            +icon("globe")
+        button(class="btn btn-danger h32")
+            +icon("home")
+    div(class="sidebar-shortcuts-mini")
+        +btn("","success","md")
+        +btn("","info","md")
+        +btn("","warning","md")
+        +btn("","danger","md")
+//search input
+div(class="sidebar-shortcuts")
+    //设置line-height修正ace style造成的样式错乱
+    div(class="sidebar-shortcuts-large" style="line-height: 34px;")
+        div#menu-searcher(class="input-group input-group-merge" style="padding: 3px 6px;")
+            input(class="form-control input-md left" type="text")
+            span(class="input-group-btn right" style="margin: 0")
+                button(class="btn btn-white btn-md")
+                    +icon("map-marker")
+        div(class="sidebar-shortcuts-mini")
+//menu
+ul#nav-list(class="nav nav-list")
+
+//collapse button
+div#sidebar-collapse(class="sidebar-collapse")
+    i(class="icon-double-angle-left" data-icon1="icon-double-angle-left" data-icon2="icon-double-angle-right")

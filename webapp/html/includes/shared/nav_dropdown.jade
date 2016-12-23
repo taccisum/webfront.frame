@@ -1,0 +1,39 @@
+-
+    var dropdownArray = [
+    {color: "orange", icon: "icon-th-large", title: "选择你喜欢的风格", list: [
+    {
+    onclick: "javascript: $('body').removeClass('skin-1 skin-2 skin-3 skin-4').addClass('skin-1');",
+    content: "<div class=\"colorpick-div\" style=\"background-color: rgb(44, 106, 160); height: 20px;\"></div>"
+    },
+    {
+    onclick: "javascript: $('body').removeClass('skin-1 skin-2 skin-3 skin-4').addClass('skin-2');",
+    content: "<div class=\"colorpick-div\" style=\"background-color: #C6487E; height: 20px;\"></div>"
+    },
+    {
+    onclick: "javascript: $('body').removeClass('skin-1 skin-2 skin-3 skin-4').addClass('skin-3');",
+    content: "<div class=\"colorpick-div\" style=\"background-color: #222A2D; height: 20px;\"></div>"
+    },
+    {
+    onclick: "javascript: $('body').removeClass('skin-1 skin-2 skin-3 skin-4').addClass('skin-4');",
+    content: "<div class=\"colorpick-div\" style=\"background-color: rgb(67, 142, 185); height: 20px;\"></div>"
+    }
+
+    ]},
+
+    {color: "grey", icon: "icon-github-alt", title: "C#相关", list: [    ]},
+    {color: "purple", icon: "icon-envelope", title: "Font Awesome！", list: [    ]},
+
+    ];
+
+each dropdown in dropdownArray
+    li(class=dropdown.color)
+        a(class="dropdown click" data-toggle="dropdown")
+            span(class=dropdown.icon)
+            | &nbsp;
+            i(class="icon-caret-down")
+        ul(class="dropdown-navbar dropdown-menu dropdown-caret dropdown-close pull-left" role="menu")
+            li(class="dropdown-header")
+                i(class=dropdown.icon)
+                | #{dropdown.title}
+            each item in dropdown.list
+                li(class="click" onclick=item.onclick) !{item.content}

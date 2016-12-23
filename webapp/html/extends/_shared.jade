@@ -1,0 +1,36 @@
+doctype html
+head
+    title Taccisum - test
+    include ../includes/header
+
+script
+    include ../js/_shared.js
+
+script
+    block onload
+
+include ../includes/common
+
+body(class="skin-4")
+    nav(class="navbar navbar-fixed-top" role="navigation" style="height:45px;")
+        div(class="container-fluid")
+
+        div(class="navbar-header pull-left")
+            include ../includes/shared/brand
+
+        div(class="pull-right")
+            ul(class="nav ace-nav")
+                include ../includes/shared/nav_dropdown
+    div#main-container(class="main-container" style="margin-top: 45px; width:100%;")
+        div(class="main-container-inner")
+            a(class="menu-toggler" id="menu-toggler" href="#")
+                span(class="menu-text")
+            div#sidebar(class="sidebar")
+                include ../includes/shared/sidebar
+
+            div(class="main-content")
+                //breadcrumbs
+                include ../includes/shared/breadcrumbs
+                //page content
+                div(class="page-content")
+                    block content
